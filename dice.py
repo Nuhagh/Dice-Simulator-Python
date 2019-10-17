@@ -1,6 +1,8 @@
+#import random library to generate random numbers
 import random
 
 
+#To draw the dice
 ledge="[-----------]"
 dice=[ledge,"[]","[]","[]",ledge]
 zero="[           ]"
@@ -9,7 +11,10 @@ two="[   0   0   ]"
 
 repeat="y"
 while (repeat == "y"):
+    #generate a random integer from 1 to 6
     number=random.randint(1,6)
+    
+    #draw the face based on the generated number
     if number == 1:
         dice[1]=zero
         dice[2]=one
