@@ -36,4 +36,6 @@ while (repeat == "y"):
         dice[3]=two
     for item in dice:
         print(item)
-    repeat=input("Repeat Rolling? Press y")
+    repeat=input("Repeat Rolling? Press y for yes and n for no: ")
+    if repeat != "n" and repeat != "y":
+        repeat=input("PLEASE! Press y for yes and n for no: ")
