@@ -6,7 +6,7 @@
 import random
 
 
-#To draw the dice
+#to draw the dice
 ledge="[-----------]"
 dice=[ledge,"[]","[]","[]",ledge]
 zero="[           ]"
@@ -15,9 +15,10 @@ two="[   0   0   ]"
 
 repeat="y"
 while (repeat == "y"):
+
     #generate a random integer from 1 to 6
     number=random.randint(1,6)
-    
+
     #draw the face based on the generated number
     if number == 1:
         dice[1]=zero
@@ -45,6 +46,8 @@ while (repeat == "y"):
         dice[3]=two
     for item in dice:
         print(item)
+        
+    #if user wants to roll again
     repeat=input("Repeat Rolling? Press y for yes and n for no: ")
     if repeat != "n" and repeat != "y":
         repeat=input("PLEASE! Press y for yes and n for no: ")
